@@ -63,6 +63,7 @@ class SignIn extends React.Component {
             <CustomButton
               onClick={async (e) => await signInWithGoogle()}
               isGoogleSignIn
+              type="button"
             >
               Sign In with Google
             </CustomButton>
