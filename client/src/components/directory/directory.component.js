@@ -8,8 +8,8 @@ import { selectDirectorySections } from "../../redux/directory/directory.selecto
 const Directory = ({ sections }) => {
   return (
     <div className="directory-menu">
-      {sections.map(({ id, title, imageUrl, size }) => (
-        <MenuItem title={title} imageUrl={imageUrl} id={id} size={size} />
+      {sections.map(({ id, ...other }) => (
+        <MenuItem id={id} {...other} />
       ))}
     </div>
   );
